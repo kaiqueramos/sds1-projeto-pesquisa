@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import { Link } from "react-router-dom";
 import { ReactComponent as Arrow } from "../../Assets/arrow.svg";
 import { ReactComponent as Gamer } from "../../Assets/gamer.svg";
 
@@ -12,12 +13,15 @@ const Home = () => {
           Clique no botão abaixo e descubra quais são os jogos mais jogados
           pelos gamers!
         </h3>
-        <div className="home-actions">
-          <button className="home-btn">Quero saber quais são</button>
-          <div className="home-btn-icon">
-            <Arrow />
+        <Link to="/records">
+          :
+          <div className="home-actions">
+            <button className="home-btn">Quero saber quais são</button>
+            <div className="home-btn-icon">
+              <Arrow />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <Gamer className="home-image"></Gamer>
     </div>
