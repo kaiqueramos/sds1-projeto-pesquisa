@@ -6,7 +6,7 @@ import { formatDate } from "./Helpers";
 import Pagination from "./Pagination";
 import Filters from "../../Components/Filters";
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://sds1-kaique.herokuapp.com";
 
 const Records = () => {
   const [recordsResponse, setRecordsResponse] = useState<RecordResponse>();
