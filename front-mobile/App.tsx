@@ -1,7 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import Header from "./src/Components/Header/Header";
-import Home from "./src/Pages/Home";
+import Routes from "./src/Routes";
 
 import { StyleSheet, Text, View } from "react-native";
 import { AppLoading } from "expo";
@@ -21,8 +20,7 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
-      <Header></Header>
-      <Home></Home>
+      <Routes></Routes>
       <StatusBar style="auto" />
     </View>
   );
@@ -31,6 +29,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#0B1F34",
   },
 });
