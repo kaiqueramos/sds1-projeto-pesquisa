@@ -14,7 +14,6 @@ const Home = () => {
           pelos gamers!
         </h3>
         <Link to="/records">
-          :
           <div className="home-actions">
             <button className="home-btn">Quero saber quais são</button>
             <div className="home-btn-icon">
